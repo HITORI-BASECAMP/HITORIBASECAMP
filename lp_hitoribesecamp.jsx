@@ -77,7 +77,7 @@ function FadeIn({ children, delay = 0 }) {
 
 // ── sections ──────────────────────────────────────────────
 
-function Hero() {
+function Hero({ onNavigate }) {
   return (
     <div style={{
       minHeight: "100svh",
@@ -429,7 +429,7 @@ function LineSection() {
 
         <FadeIn delay={0.35}>
           <button style={{ ...btn("primary"), width: "100%", textAlign: "center" }}
-            onClick={() => onNavigate("diagnostic")}>
+            onClick={() => window.open("https://lin.ee/xzOSULr", "_blank")}>
             LINEで登録する
           </button>
         </FadeIn>
@@ -438,7 +438,7 @@ function LineSection() {
   );
 }
 
-function Footer() {
+function Footer({ onNavigate }) {
   return (
     <div style={{
       background: T.ink,
@@ -492,12 +492,12 @@ function Footer() {
 export default function LP({ onNavigate }) {
   return (
     <div style={{ background: T.bg, fontFamily: font.body }}>
-      <Hero />
+      <Hero onNavigate={onNavigate} />
       <Empathy />
       <Concept />
-      <Diagnostic />
+      <Diagnostic onNavigate={onNavigate} />
       <LineSection />
-      <Footer />
+      <Footer onNavigate={onNavigate} />
     </div>
   );
 }
