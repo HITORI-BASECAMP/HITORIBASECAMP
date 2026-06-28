@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import LP from "./lp_hitoribesecamp.jsx";
+import LP from "./lp_hitorribesecamp.jsx";
 import DiagnosticApp from "./solo_life_skill_check_app_v6.jsx";
 import LegalPages from "./legal_pages.jsx";
 
