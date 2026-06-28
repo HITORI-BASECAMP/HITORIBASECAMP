@@ -288,7 +288,7 @@ function Concept() {
   );
 }
 
-function Diagnostic() {
+function Diagnostic({ onNavigate }) {
   return (
     <div id="diagnostic" style={{ background: T.bgCard, padding: "72px 24px" }}>
       <div style={{ maxWidth: 640, margin: "0 auto" }}>
