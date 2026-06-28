@@ -353,7 +353,7 @@ function Diagnostic() {
 
         <FadeIn delay={0.35}>
           <button style={{ ...btn("primary"), width: "100%", textAlign: "center" }}
-            onClick={() => window.open("https://lin.ee/xzOSULr", "_blank")}>
+            onClick={() => onNavigate("diagnostic")}>
             無料でスキル診断を受ける
           </button>
           <p style={{
