@@ -489,7 +489,7 @@ function Footer() {
 }
 
 // ── main ─────────────────────────────────────────────────
-export default function LP() {
+export default function LP({ onNavigate }) {
   return (
     <div style={{ background: T.bg, fontFamily: font.body }}>
       <Hero />
